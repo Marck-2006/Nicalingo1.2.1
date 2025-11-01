@@ -5,8 +5,13 @@
     font-family: "Poppins", sans-serif;
 }
 .me-2{
-    margin-right: clamp(0.5rem, 1rem, 1.5rem);
+    font-size: clamp(0.5rem, 1rem, 1.5rem);
     font-weight: bold;
     font-family: "Poppins", sans-serif;
     color: #8c6239e8;
+}
+.dropdown-menu{
+    font-family: "Poppins", sans-serif;
+    color: #8c6239e8;
+    background-color: #fff;
 }
