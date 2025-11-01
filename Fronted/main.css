@@ -11,7 +11,23 @@
     color: #8c6239e8;
 }
 .dropdown-menu{
+    background-color: #e7c471c0;
+}
+.dropdown-item{
     font-family: "Poppins", sans-serif;
-    color: #8c6239e8;
-    background-color: #fff;
+    background-color: #e7c471c0;
+    color: #ffffff;
+}
+.Container-body h1 {
+    font-size: clamp(1.5rem, 2.5rem, 3.5rem);
+    text-align: center;
+    margin-top: clamp(3rem, 6rem, 9rem);
+    font-family: "Poppins", sans-serif;
+}
+
+.Container-body p {
+    font-size: clamp(0.5rem, 1rem, 1.5rem);
+    text-align: center;
+    margin-top: clamp(1rem, 4rem, 7rem);
+    font-family: "Poppins", sans-serif;
 }
