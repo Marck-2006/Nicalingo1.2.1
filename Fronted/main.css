@@ -31,3 +31,92 @@
     margin-top: clamp(1rem, 4rem, 7rem);
     font-family: "Poppins", sans-serif;
 }
+
+/* ======================================= */
+/* 1. BOTÓN SIDEBAR TOGGLE (MARRÓN) - MÁXIMA ESPECIFICIDAD */
+/* Esto sobrescribe el azul de .btn-primary */
+/* ======================================= */
+
+#sidebarToggle.btn-primary { 
+    /* Colores y fuente base */
+    background-color: #8c6239 !important; 
+    border-color: #8c6239 !important;     
+    color: #ffffff !important; 
+    font-family: "Poppins", sans-serif;
+    padding: 0.5rem 1rem; /* Ajuste para que el botón se vea mejor */
+}
+
+/* Espacio y color del icono dentro del botón */
+#sidebarToggle i {
+    margin-right: 0.5rem; /* Separa el icono de la palabra "Menú" */
+    color: #ffffff !important; 
+}
+
+/* Estado Hover: Tono más oscuro al pasar el ratón */
+#sidebarToggle.btn-primary:hover {
+    background-color: #795632 !important;
+    border-color: #795632 !important;
+    color: #ffffff !important; 
+}
+
+/* Estado Focus/Active: Sombra al hacer clic para accesibilidad */
+#sidebarToggle.btn-primary:focus {
+    box-shadow: 0 0 0 0.25rem rgba(140, 98, 57, 0.5) !important;
+}
+
+/* ======================================= */
+/* 2. BARRA LATERAL (SIDEBAR) ESTILOS GENERALES */
+/* ======================================= */
+
+/* Fondo Marrón para la barra lateral completa */
+#sidebar-wrapper {
+    background-color: #8c6239 !important; 
+    border-right-color: #795632 !important;
+}
+
+/* Encabezado de la barra lateral ("Mi App") */
+#sidebar-wrapper .sidebar-heading {
+    background-color: #795632; /* Tono de marrón ligeramente más oscuro */
+    color: #e7c371 !important; /* Texto en tu color claro/beige */
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* ======================================= */
+/* 3. ENLACES DE NAVEGACIÓN DE LA BARRA LATERAL */
+/* ======================================= */
+
+/* Estilo base de los enlaces */
+#sidebar-wrapper .list-group-item {
+    background-color: #8c6239 !important; 
+    color: #ffffff !important;           
+    border: none;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Efecto Hover: Resalta el texto en beige y cambia el fondo al marrón más oscuro */
+#sidebar-wrapper .list-group-item:hover {
+    background-color: #795632 !important; 
+    color: #e7c371 !important;           
+}
+
+/* Ajuste de Iconos en los enlaces de la barra lateral (los que usan .me-2) */
+#sidebar-wrapper .list-group-item i {
+    margin-right: 0.75rem; /* Ajusta la separación del icono al texto */
+    font-size: 1.1rem;
+    color: #ffffff !important; /* Asegura que el icono sea blanco por defecto */
+}
+
+/* Cuando se hace hover, el color del icono hereda el color beige del texto: ¡No necesita un estilo específico aquí! */
+
+
+/* ======================================= */
+/* 4. BARRA DE NAVEGACIÓN SUPERIOR (NAVBAR) */
+/* ======================================= */
+
+/* Fondo de la Navbar en tu color claro/beige */
+.navbar {
+    background-color: #e7c371 !important;
+    border-bottom: 2px solid #8c6239; /* Borde inferior marrón para contraste */
+}
